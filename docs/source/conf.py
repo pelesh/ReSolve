@@ -10,6 +10,9 @@ author = 'Graziella'
 release = '0.1'
 version = '0.1.0'
 
+subprocess.call('cd .. ; doxygen', shell=True)
+
+
 # -- General configuration
 
 extensions = [
@@ -27,9 +30,6 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
-
-subprocess.call('cd .. ; doxygen', shell=True)
-
 
 # -- Options for HTML output
 
