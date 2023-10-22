@@ -1,6 +1,8 @@
 # Configuration file for the Sphinx documentation builder.
 import subprocess
 
+subprocess.call('cd .. ; doxygen', shell=True)
+
 # -- Project information
 
 project = 'Re::Solve'
@@ -9,8 +11,6 @@ author = 'Graziella'
 
 release = '0.1'
 version = '0.1.0'
-
-subprocess.call('cd .. ; doxygen', shell=True)
 
 
 # -- General configuration
