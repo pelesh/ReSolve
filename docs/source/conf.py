@@ -1,4 +1,5 @@
 # Configuration file for the Sphinx documentation builder.
+import subprocess
 
 # -- Project information
 
@@ -27,9 +28,13 @@ intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 
+subprocess.call('cd .. ; doxygen', shell=True)
+
+
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
+html_extra_path = ['../build/html']
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
