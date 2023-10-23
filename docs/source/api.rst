@@ -4,7 +4,8 @@ API
 .. autosummary::
    :toctree: generated
 
+`Source documentation <doxygen/html/index.html>`__
+
    Re::Solve
 
-`Source documentation <doxygen/html/index.html>`__
 
