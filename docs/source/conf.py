@@ -1,7 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 import subprocess
 
-subprocess.call('$READTHEDOCS_OUTPUT/html/doxygen; cd .. ; doxygen', shell=True)
+subprocess.call('mkdir -p $READTHEDOCS_OUTPUT/html/doxygen; cd .. ; doxygen', shell=True)
 
 # -- Project information
 
